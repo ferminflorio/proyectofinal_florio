@@ -1,0 +1,85 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: $font;
+}
+body {
+	background-color: $black;
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+}
+$main-data: (
+	fondo: $black2,
+	pad-botton: 100px,
+	pad-top: 50px,
+);
+main {
+	background-color: map-get($main-data, fondo);
+	padding-bottom: map-get($main-data, pad-botton);
+	padding-top: map-get($main-data, pad-top);
+}
+.main_foto {
+	background-image: url(../assets/img/fondo_contactos.jpg);
+	padding-bottom: 0px;
+	min-height: 100vh;
+}
+.main_grafico {
+	background-image: url(../assets/img/fondo_contactos.jpg);
+}
+.main_direccion {
+	background-image: url(../assets/img/fondo_contactos.jpg);
+	min-height: 85vh;
+}
+.body_index {
+	position: relative;
+	background-image: url("../assets/img/index_beba2.jpg");
+	height: calc(100vh - 62px);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+a {
+	color: $red;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+	transition: transform 0.2s ease-out;
+	&:hover {
+		color: $purple;
+	}
+}
+.header {
+	background-color: rgb(36, 13, 13);
+}
+.encabezado {
+	color: $purple;
+	text-align: center;
+	margin: 15px 0px 15px 0px;
+	padding: 1rem;
+	font-size: 50px;
+}
+.fondo_h2 {
+	background-color: rgb(8, 8, 8);
+}
+
+h2 {
+	color: $yellow;
+	text-align: center;
+	background-color: none;
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+p {
+	color: $yellow;
+	font-size: large;
+	padding: 2rem;
+}
+textarea {
+	resize: none;
+}
+label {
+	font-size: large;
+}

@@ -1,0 +1,201 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background-color: #272626;
+  position: relative;
+  margin: 0;
+  min-height: 100vh; }
+
+main {
+  background-color: #1d1d1d;
+  padding-bottom: 100px;
+  padding-top: 50px; }
+
+.main_foto {
+  background-image: url(../assets/img/fondo_contactos.jpg);
+  padding-bottom: 0px;
+  min-height: 100vh; }
+
+.main_grafico {
+  background-image: url(../assets/img/fondo_contactos.jpg); }
+
+.main_direccion {
+  background-image: url(../assets/img/fondo_contactos.jpg);
+  min-height: 85vh; }
+
+.body_index {
+  position: relative;
+  background-image: url("../assets/img/index_beba2.jpg");
+  height: calc(100vh - 62px);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px; }
+
+a {
+  color: #df1919;
+  font-size: 30px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease-out; }
+  a:hover {
+    color: #c297cf; }
+
+.header {
+  background-color: #240d0d; }
+
+.encabezado {
+  color: #c297cf;
+  text-align: center;
+  margin: 15px 0px 15px 0px;
+  padding: 1rem;
+  font-size: 50px; }
+
+.fondo_h2 {
+  background-color: #080808; }
+
+h2 {
+  color: #d3c15d;
+  text-align: center;
+  background-color: none;
+  padding-top: 45px;
+  padding-bottom: 15px; }
+
+p {
+  color: #d3c15d;
+  font-size: large;
+  padding: 2rem; }
+
+textarea {
+  resize: none; }
+
+label {
+  font-size: large; }
+
+.nav-item {
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  padding-right: 20px; }
+
+.navbar {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.nav-index {
+  background-image: none; }
+
+.main_nav_list {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-areas: "nav1 nav2 nav3 nav4";
+  grid-row-gap: 3px;
+  margin: 0;
+  padding: 10px; }
+
+li {
+  list-style-type: none; }
+  li a:hover {
+    transform: translateX(5px); }
+
+@media only screen and (max-width: 320px) {
+  .main_nav_list {
+    grid-template-areas: "nav1" "nav2" "nav3" "nav4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .main_nav_list {
+    grid-template-areas: "nav1" "nav2" "nav3" "nav4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .main_nav_list {
+    grid-template-areas: "nav1 nav2" "nav3 nav4";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
+
+.video_title {
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  color: #d3c15d;
+  margin-bottom: 15px; }
+
+.videoclip {
+  width: 100%;
+  min-height: 400px;
+  transition: transform 0.2s ease-in; }
+
+.videoclip:hover {
+  transform: scale(0.9) translateX(20px); }
+
+.grid_item_video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px; }
+
+@media only screen and (max-width: 768px) {
+  .grid_videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "video1" "video2" "video3"; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid_videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "video1 video2 video3";
+    grid-column-gap: 40px;
+    padding: 0 20px; }
+  .header_parallax {
+    height: 800px; } }
+
+@media only screen and (min-width: 1025px) {
+  .grid_videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "video1" "video2" "video3";
+    grid-column-gap: 40px;
+    padding: 0 20px; } }
+
+.form-control {
+  width: 100%; }
+
+.btn {
+  width: 500px; }
+
+.main_contacto {
+  background-image: url(../assets/img/fondo_contactos.jpg);
+  padding-bottom: 70px;
+  min-height: 100vh; }
+
+.body_contacto {
+  width: 100%;
+  position: absolute;
+  padding: 0px; }
+
+.footer-data {
+  background-color: #240d0d;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  padding: 0; }
+
+.footer_content_list {
+  display: flex;
+  justify-content: center;
+  margin: 0px; }
+
+.footer_content_item {
+  margin: 1rem; }
+
+.rrss:hover {
+  opacity: 0.5;
+  transition: transform 0.2s ease-out; }
